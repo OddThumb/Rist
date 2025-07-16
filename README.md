@@ -70,7 +70,7 @@ print(x.values)
 
 You can use `tab` to check elements in tooltip!
 
-![](Attribute)
+![AttributeAccess](images/Attribute.png)
 
 ```python
 # Access by attribute access
