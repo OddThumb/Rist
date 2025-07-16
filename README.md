@@ -216,7 +216,7 @@ print(Rist_combined)
             3  4  8
 
 
-### During adding, if the name already exists, it will raise an error.
+During adding, if the name already exists, it will raise an error.
 
 
 ```python
@@ -283,7 +283,7 @@ print(Rist1)
             'ImNoob'
 
 
-### During appending, if the name already exists, it will raise an error.
+During appending, if the name already exists, it will raise an error.
 
 
 ```python
