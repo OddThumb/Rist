@@ -67,6 +67,8 @@ print(x.values)
 
 ### Attribute
 
+![AttributeAccess](images/Attribute.png)
+
 
 ```python
 # Access by attribute access
