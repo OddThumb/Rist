@@ -1,11 +1,11 @@
 # `R` style `list` class in `Python`
 
 - I made this JUST FOR FUN! 
-- You can `Rist` class to create a list-like object in Python.
+- You can use `Rist` class to create a list-like object in Python.
 - It allows you to access elements by name, similar to R's named lists.
+- The most easy way is to use attribute access.
 - Of course, it also supports access by index.
-- Most easy way is to use attribute access.
-- You can contain any type of object, including other `Rist` objects.
+- You can contain any type of object, including other `Rist` objects, even.
 
 
 ```python
