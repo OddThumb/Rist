@@ -216,6 +216,35 @@ print(Rist_combined)
             3  4  8
 
 
+### During adding, if the name already exists, it will raise an error.
+
+
+```python
+Rist_hasDupName = main.Rist(list1 = ['duplicated', 'name', 'not', 'allowed'])
+Rist_combined2 = Rist1 + Rist_hasDupName
+```
+
+
+    ---------------------------------------------------------------------------
+
+    ValueError                                Traceback (most recent call last)
+
+    Cell In[22], line 2
+          1 Rist_hasDupName = main.Rist(list1 = ['duplicated', 'name', 'not', 'allowed'])
+    ----> 2 Rist_combined2 = Rist1 + Rist_hasDupName
+
+
+    File ~/projects/Python/Rist/main.py:94, in Rist.__add__(self, other)
+         92 if duplicates:
+         93     dup_list = ", ".join(f"'{d}'" for d in duplicates)
+    ---> 94     raise ValueError(f"Duplicate name(s) {dup_list} detected during addition.")
+         96 # Combine
+         97 combined = Rist()
+
+
+    ValueError: Duplicate name(s) 'list1' detected during addition.
+
+
 ## Append an element into `Rist`
 
 
@@ -254,7 +283,29 @@ print(Rist1)
             'ImNoob'
 
 
+### During appending, if the name already exists, it will raise an error.
+
 
 ```python
-
+Rist1.append(list1 = ['duplicated', 'name', 'not', 'allowed'])
 ```
+
+
+    ---------------------------------------------------------------------------
+
+    ValueError                                Traceback (most recent call last)
+
+    Cell In[20], line 1
+    ----> 1 Rist1.append(list1 = ['duplicated', 'name', 'not', 'allowed'])
+
+
+    File ~/projects/Python/Rist/main.py:123, in Rist.append(self, *args, **kwargs)
+        121 name, obj = next(iter(kwargs.items()))
+        122 if name in self._name_to_index:
+    --> 123     raise ValueError(f"Name '{name}' already exists in this Rist.")
+        124 self.values.append(obj)
+        125 self.names.append(name)
+
+
+    ValueError: Name 'list1' already exists in this Rist.
+
